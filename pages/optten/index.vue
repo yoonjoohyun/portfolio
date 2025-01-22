@@ -8,4 +8,4 @@
 
 </script>
 
-<style lang="scss" scoped src="@/assets/scss/orange.scss"></style>
+<style lang="scss" scoped src="@/assets/scss/optten.scss"></style>

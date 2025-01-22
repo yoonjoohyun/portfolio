@@ -1,6 +1,6 @@
 <template>
 <div class="wrap">
-    레드
+    파랑
 </div>
 </template>
 
@@ -8,4 +8,4 @@
 
 </script>
 
-<style lang="scss" scoped src="@/assets/scss/red.scss"></style>
+<style lang="scss" scoped src="@/assets/scss/gven.scss"></style>

@@ -1,6 +1,6 @@
 <template>
 <div class="main_bg">
-    
+    <Content/>
 </div>
 </template>
 <script setup>

@@ -63,7 +63,6 @@ body {
     font-family: var(--font-family);
 }
 
-
 *,*::before,*::after,body{
     margin:0;
     padding:0;
@@ -80,8 +79,36 @@ html{
     font-size:62.5%; //기본 폰트사이즈(16px)의 62.5%인 10px = 1rem 으로 사용할 수 있다.
 }
 
+.wrap{
+    width:100vw;
+    overflow: auto;  // 추가: 세로 스크롤 허용
+    
+    // 스크롤바 스타일
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+    
+    &::-webkit-scrollbar-track {
+    background-color: #ececec;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background-color: #c4c4c4;
+    }
+    
+    padding-top:70px;
+    height:calc(100vh - 70px);
 
-
+    @media(width < 980px){
+        padding-top:56px;
+        height:calc(100% - 56px);
+    }
+    @media(width < 480px){
+        padding-top:40px;
+        height:calc(100% - 40px);
+    }
+}
 
 
 

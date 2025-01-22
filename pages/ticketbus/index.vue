@@ -8,4 +8,4 @@
   
   </script>
   
-  <style lang="scss" scoped src="@/assets/scss/purple.scss"></style>
+  <style lang="scss" scoped src="@/assets/scss/ticketbus.scss"></style>
