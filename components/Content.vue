@@ -2,10 +2,10 @@
     <div class="content">
         <div class="txt_box">
             <div class="title">
-                <span>{{ title }}</span>
+                <span class="title">{{ title }}</span>
             </div>
             <div class="explain">
-                <span>{{ description }}</span>
+                <span class="txt">{{ description }}</span>
             </div>
         </div>
         <div class="work_box">
@@ -43,17 +43,34 @@ const props = defineProps({
 
 const slideBox = ref(null)
 const currentPosition = ref(0)
-const slideWidth = 770 // work의 width + margin-right
+const slideWidth = ref(770) // 초기값 설정
+
+// 슬라이드 넓이를 계산하는 함수 추가
+const calculateSlideWidth = () => {
+    if (window.innerWidth < 480) {
+        slideWidth.value = 370 // 320px + 50px margin
+    } else if (window.innerWidth < 980) {
+        slideWidth.value = 530 // 480px + 50px margin
+    } else {
+        slideWidth.value = 770 // 720px + 50px margin
+    }
+}
+
+// 윈도우 리사이즈 이벤트 핸들러 추가
+onMounted(() => {
+    calculateSlideWidth()
+    window.addEventListener('resize', calculateSlideWidth)
+})
 
 function nextSlide() {
-    if (currentPosition.value > -(slideWidth * (props.images.length - 1))) {
-        currentPosition.value -= slideWidth
+    if (currentPosition.value > -(slideWidth.value * (props.images.length - 1))) {
+        currentPosition.value -= slideWidth.value
     }
 }
 
 function prevSlide() {
     if (currentPosition.value < 0) {
-        currentPosition.value += slideWidth
+        currentPosition.value += slideWidth.value
     }
 }
 </script>
