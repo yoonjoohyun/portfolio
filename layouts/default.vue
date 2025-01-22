@@ -6,7 +6,7 @@
         <div class="menu_box_pc">
             <ul>
                 <li class="menu"><NuxtLink class="txt_box" to="/red">optten</NuxtLink></li>
-                <li class="menu"><NuxtLink class="txt_box" to="/orange">orange</NuxtLink></li>
+                <li class="menu"><NuxtLink class="txt_box" to="/orange">gven</NuxtLink></li>
                 <li class="menu"><NuxtLink class="txt_box" to="/yellow">yellow</NuxtLink></li>
                 <li class="menu"><NuxtLink class="txt_box" to="/green">green</NuxtLink></li>
                 <li class="menu"><NuxtLink class="txt_box" to="/blue">blue</NuxtLink></li>
