@@ -21,10 +21,8 @@
                         <img :src="image.src" :alt="image.alt">
                     </div>
                 </div>
-            </div>
-            <div class="work_btn">
-                <div class="slide_btn" @click="prevSlide"><i class="ri-arrow-left-circle-fill"></i></div>
-                <div class="slide_btn" @click="nextSlide"><i class="ri-arrow-right-circle-fill"></i></div>
+                <div class="left_btn" @click="prevSlide"><i class="ri-arrow-left-circle-fill"></i></div>
+                <div class="right_btn" @click="nextSlide"><i class="ri-arrow-right-circle-fill"></i></div>
             </div>
         </div>
     </div>

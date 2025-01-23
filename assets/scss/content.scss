@@ -42,7 +42,6 @@
     width:100%;
     height:auto;
     overflow: hidden;
-    position:relative;
 }
 .slide_box{
     width:100%;
@@ -50,6 +49,7 @@
     overflow: hidden;
     display:flex;
     align-items: center;
+    position:relative;
 
     @media(width < 980px){
         height:350px;
@@ -95,33 +95,47 @@
     }
     
 }
-.work_btn{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    width:95%;
-    height:auto;
-    display:flex;
-    justify-content:space-between;
-    margin: 0 auto;
-}
-    .slide_btn{
-        width:50px;
-        height:50px;
-        font-size:6rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        opacity:0.3;
-        color:#000000;
-        
-        &:hover {
-            opacity: 0.6;
-        }
 
-        @media(width < 480px){
-            font-size:4rem;
-        }
+.left_btn{
+    width:50px;
+    height:50px;
+    font-size:6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity:0.3;
+    color:#000000;
+    position:absolute;
+    left:10px;
+    
+    &:hover {
+        opacity: 0.6;
     }
+
+    @media(width < 480px){
+        font-size:4rem;
+    }
+}
+
+.right_btn{
+    width:50px;
+    height:50px;
+    font-size:6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity:0.3;
+    color:#000000;
+    position:absolute;
+    right:10px;
+    
+    &:hover {
+        opacity: 0.6;
+    }
+
+    @media(width < 480px){
+        font-size:4rem;
+    }
+}
