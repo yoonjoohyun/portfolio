@@ -6,10 +6,10 @@
     margin-top:30px;
     margin-bottom:80px;
     @media(width < 980px){
-        margin-bottom:60px;
+        margin-bottom:70px;
     }
     @media(width < 480px){
-        margin-bottom:50px;
+        margin-bottom:90px;
     }
 }
 
@@ -41,39 +41,40 @@
 .work_box{
     width:100%;
     height:auto;
-    overflow: hidden;
+    margin-top:30px;
+    position:relative;
 }
 .slide_box{
     width:100%;
-    height:450px;
+    height:600px;
     overflow: hidden;
     display:flex;
     align-items: center;
-    position:relative;
+    background-color:rgba(0, 0, 0, 0.11);
 
     @media(width < 980px){
-        height:350px;
+        height:540px;
     }
     @media(width < 480px){
-        height:220px;
+        height:540px;
     }
 }
 .work_container {
-    width:720px;
+    width:420px;
     display: flex;
     transition: transform 0.3s ease-in-out;
     margin:0 auto;
 
     @media(width < 980px){
-        width:480px;
+        width:240px;
     }
     @media(width < 480px){
-        width:320px;
+        width:240px;
     }
 }
 .work{
     width:100%;
-    height:400px;
+    height:600px;
     flex-shrink: 0;
     overflow: hidden;
     display: flex;
@@ -82,60 +83,77 @@
     margin-right:50px;
     
     img {
+        max-width:100%;
+        max-height:100%;
+        width:auto;
         height:auto;
-        width:100%;
-        display: block;
+        object-fit: contain;
     }
 
     @media(width < 980px){
-        height:300px;
+        height:540px;
     }
     @media(width < 480px){
-        height:250px;
+        height:540px;
     }
-    
 }
 
 .left_btn{
-    width:50px;
-    height:50px;
-    font-size:6rem;
+    width:16px;
+    height:600px;
+    font-size:1.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     opacity:0.3;
-    color:#000000;
+    color:#ffffff93;
     position:absolute;
-    left:10px;
+    top:50%;
+    transform:translate(0,-50%);
+    left:-16px;
+    background-color:rgb(78, 78, 78);
+    border-radius:3px 0 0 3px;
     
     &:hover {
-        opacity: 0.6;
+        opacity: 0.4;
+        color:#ffffffd5;
     }
 
+    @media(width < 980px){
+        height:540px;
+    }
     @media(width < 480px){
-        font-size:4rem;
+        height:540px;
     }
 }
 
 .right_btn{
-    width:50px;
-    height:50px;
-    font-size:6rem;
+    width:16px;
+    height:600px;
+    font-size:1.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     opacity:0.3;
-    color:#000000;
+    color:#ffffff93;
     position:absolute;
-    right:10px;
+    top:50%;
+    transform:translate(0,-50%);
+    right:-16px;
+    background-color:rgb(78, 78, 78);
+    border-radius:0 3px 3px 0;
     
     &:hover {
-        opacity: 0.6;
+        opacity: 0.4;
+        color:#ffffffd5;
     }
 
+    @media(width < 980px){
+        height:540px;
+    }
     @media(width < 480px){
-        font-size:4rem;
+        height:540px;
     }
 }

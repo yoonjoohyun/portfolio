@@ -21,9 +21,9 @@
                         <img :src="image.src" :alt="image.alt">
                     </div>
                 </div>
-                <div class="left_btn" @click="prevSlide"><i class="ri-arrow-left-circle-fill"></i></div>
-                <div class="right_btn" @click="nextSlide"><i class="ri-arrow-right-circle-fill"></i></div>
             </div>
+            <div class="left_btn" @click="prevSlide">◀</div>
+            <div class="right_btn" @click="nextSlide">▶</div>
         </div>
     </div>
 </template>
@@ -134,4 +134,4 @@ function prevSlide() {
 }
 </script>
 
-<style lang="scss" scoped src="~/assets/scss/content.scss"></style>
+<style lang="scss" scoped src="~/assets/scss/content_wide.scss"></style>

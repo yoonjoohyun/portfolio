@@ -1,11 +1,11 @@
 <template>
 <div class="wrap">
-    <Content 
+    <ContentWide
         :title="title"
         :description="description"
         :images="images"
     />
-    <Content 
+    <ContentWide
         :title="title02"
         :description="description02"
         :images="images02"
@@ -15,7 +15,7 @@
 
 <script setup>
 
-import Content from '@/components/Content.vue'
+import Content from '~/components/ContentWide.vue'
 import work1 from '@/assets/images/acepharm/work1.png'
 import work2 from '@/assets/images/acepharm/work2.png'
 import work3 from '@/assets/images/acepharm/work3.png'
