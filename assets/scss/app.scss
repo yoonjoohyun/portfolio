@@ -98,15 +98,15 @@ html{
     }
     
     padding-top:70px;
-    height:calc(100vh - 70px);
+    height:calc(100vh);
 
     @media(width < 980px){
         padding-top:56px;
-        height:calc(100% - 56px);
+        height:calc(100vh);
     }
     @media(width < 480px){
         padding-top:40px;
-        height:calc(100% - 40px);
+        height:calc(100vh);
     }
 }
 
