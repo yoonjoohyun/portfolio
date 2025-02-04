@@ -1,0 +1,76 @@
+.wrap{
+    position: relative;
+    background-color:rgba(250, 254, 255, 0.76);
+}
+.wrap:before{
+    content:'';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('@/assets/images/background/bglayer001.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+
+
+.myself{
+    padding:5% 2% 10% 2%;
+    width:820px;
+    height:auto;
+    margin:0 auto;
+    @media(width < 980px){
+        width:440px;
+        padding:10% 2% 10% 2%;
+    }
+    @media(width < 400px){
+        width:320px;
+        padding:10% 2% 10% 2%;
+    }
+}
+    .content{
+        margin-top:3%;
+        @media(width < 980px){
+            margin-top:4%;
+        }
+    }
+    .title{
+        font-size:1.8rem;
+        line-height:2.4rem;
+        color:#111;
+        font-weight:600;
+    }
+    .txt{
+        font-size:1.6rem;
+        line-height:2.2rem;
+        color:#333;
+        font-weight:500;
+        margin-top:1%;
+    }
+    .txt1{
+        margin-bottom:3%;
+    }
+    .b{
+        color:#000;
+        background-color:rgba(166, 255, 0, 0.274);
+    }
+    .c{
+        opacity:0.6;
+    }
+    .mb{
+        margin-bottom:8%;
+    }
+    .tb{
+        font-size:2rem;
+    }
+
+
+
+
+
+
