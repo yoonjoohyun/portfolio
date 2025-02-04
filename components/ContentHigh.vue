@@ -5,7 +5,10 @@
                 <span class="title">{{ title }}</span>
             </div>
             <div class="explain">
-                <span class="txt">{{ description }}</span>
+                <span class="txt large">{{ hightxt01 }}</span>
+                <span class="txt medium">{{ hightxt02 }}</span>
+                <span class="txt medium mb1">{{ hightxt03 }}</span>
+                <span class="txt light">{{ hightxt04 }}</span>
             </div>
         </div>
         <div class="work_box">
@@ -18,7 +21,14 @@
                 <div class="work_container" 
                     :style="{ transform: `translateX(${currentPosition}px)` }">
                     <div v-for="(image, index) in images" :key="index" class="work">
-                        <img :src="image.src" :alt="image.alt">
+                        <a v-if="image.link" :href="image.link" target="_blank">
+                            <img
+                                :src="image.src"
+                                :alt="image.alt"
+                                :style="{ cursor: image.link ? 'pointer' : 'default' }"
+                            >
+                        </a>
+                        <img v-else :src="image.src" alt="">
                     </div>
                 </div>
             </div>
@@ -35,7 +45,19 @@ const props = defineProps({
         type: String,
         default: ''
     },
-    description: {
+    hightxt01: {
+        type: String,
+        default: ''
+    },
+    hightxt02: {
+        type: String,
+        default: ''
+    },
+    hightxt03: {
+        type: String,
+        default: ''
+    },
+    hightxt04: {
         type: String,
         default: ''
     },

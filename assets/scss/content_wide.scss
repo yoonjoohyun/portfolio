@@ -30,6 +30,7 @@
 .txt{
     font-size:2.2rem;
     font-weight:500;
+    display:block;
     @media(width < 980px){
         font-size:1.8rem;
     }
@@ -37,11 +38,49 @@
         font-size:1.4rem;
     }
 }
+.large{
+    margin-bottom:1.5%;
+    font-weight:500;
+}
+.mb1{
+    margin-bottom:1%;
+    @media(width < 480px){
+        margin-bottom:2%;
+    }
+}
+.medium{
+    color:#333;
+    font-weight:500;
+    font-size:1.8rem;
+    @media(width < 980px){
+        font-size:1.8rem;
+    }
+    @media(width < 480px){
+        font-size:1.4rem;
+    }
+}
+.light{
+    border-radius:5px 5px 5px 5px;
+    background-color:rgba(255,255,255,0.4);
+    line-height:2.4rem;
+    padding:1.2% 2% 1.2% 2%;
+    color:#333;
+    font-weight:400;
+    font-size:1.6rem;
+    @media(width < 980px){
+        font-size:1.6rem;
+    }
+    @media(width < 480px){
+        padding:2.2% 3% 2.2% 3%;
+        line-height:2rem;
+        font-size:1.4rem;
+    }
+}
 
 .work_box{
     width:100%;
     height:auto;
-    margin-top:30px;
+    margin-top:3%;
     position:relative;
 }
 .slide_box{
@@ -83,9 +122,33 @@
     margin-right:50px;
     
     img {
-        height:auto;
-        width:100%;
-        display: block;
+        max-height: 100%;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        @media(width < 980px){
+            max-width: 100%;
+        }
+        @media(width < 480px){
+            max-width: 100%;
+        }
+    }
+
+    a{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a img {
+        transition: filter 0.3s ease;
+        
+        &:hover {
+            opacity:0.6;
+        }
     }
 
     @media(width < 980px){

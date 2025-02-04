@@ -1,7 +1,7 @@
 <template>
     <nav class="navi">
         <div class="logo_box">
-            <NuxtLink class="logo" to="/"><img src="~/assets/images/logo.png"/></NuxtLink>
+            <NuxtLink class="logo" to="/"><img src="~/assets/images/logo.webp"/></NuxtLink>
         </div>
         <div class="menu_box_pc">
             <ul>

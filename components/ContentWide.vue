@@ -5,7 +5,10 @@
                 <span class="title">{{ title }}</span>
             </div>
             <div class="explain">
-                <span class="txt">{{ description }}</span>
+                <span class="txt large">{{ widetxt01 }}</span>
+                <span class="txt medium">{{ widetxt02 }}</span>
+                <span class="txt medium mb1">{{ widetxt03 }}</span>
+                <span class="txt light">{{ widetxt04 }}</span>
             </div>
         </div>
         <div class="work_box">
@@ -18,7 +21,14 @@
                 <div class="work_container" 
                     :style="{ transform: `translateX(${currentPosition}px)` }">
                     <div v-for="(image, index) in images" :key="index" class="work">
-                        <img :src="image.src" :alt="image.alt">
+                        <a v-if="image.link" :href="image.link" target="_blank">
+                            <img
+                                :src="image.src"
+                                :alt="image.alt"
+                                :style="{ cursor: image.link ? 'pointer' : 'default' }"
+                            >
+                        </a>
+                        <img v-else :src="image.src" alt="">
                     </div>
                 </div>
             </div>
@@ -35,7 +45,19 @@ const props = defineProps({
         type: String,
         default: ''
     },
-    description: {
+    widetxt01: {
+        type: String,
+        default: ''
+    },
+    widetxt02: {
+        type: String,
+        default: ''
+    },
+    widetxt03: {
+        type: String,
+        default: ''
+    },
+    widetxt04: {
         type: String,
         default: ''
     },
@@ -57,6 +79,13 @@ const calculateSlideWidth = () => {
         slideWidth.value = 530 // 480px + 50px margin
     } else {
         slideWidth.value = 770 // 720px + 50px margin
+    }
+}
+
+// 이미지 클릭 핸들러 추가
+const handleImageClick = (link) => {
+    if (link) {
+        window.open(link, '_blank')
     }
 }
 
