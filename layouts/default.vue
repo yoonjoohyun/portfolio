@@ -6,6 +6,7 @@
         <div class="menu_box_pc">
             <ul>
                 <li class="menu"><NuxtLink class="txt_box" to="/profile">프로필</NuxtLink></li>
+                <li class="menu"><NuxtLink class="txt_box" to="/project">개인작업</NuxtLink></li>
                 <li class="menu"><NuxtLink class="txt_box" to="/optten">옵텐</NuxtLink></li>
                 <li class="menu"><NuxtLink class="txt_box" to="/acepharm">에이스제약</NuxtLink></li>
                 <li class="menu"><NuxtLink class="txt_box" to="/gven">지벤가구</NuxtLink></li>
@@ -28,6 +29,7 @@
     <div class="menu_box_mobile" :class="{ 'is-active': isMenuOpen }">
         <ul>
             <li class="menu" @click="toggleMenu"><NuxtLink class="txt_box" to="/profile">프로필</NuxtLink></li>
+            <li class="menu" @click="toggleMenu"><NuxtLink class="txt_box" to="/project">개인작업</NuxtLink></li>
             <li class="menu" @click="toggleMenu"><NuxtLink class="txt_box" to="/optten">옵텐</NuxtLink></li>
             <li class="menu" @click="toggleMenu"><NuxtLink class="txt_box" to="/acepharm">에이스제약</NuxtLink></li>
             <li class="menu" @click="toggleMenu"><NuxtLink class="txt_box" to="/gven">지벤가구</NuxtLink></li>
