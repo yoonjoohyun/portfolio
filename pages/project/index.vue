@@ -1,5 +1,12 @@
 <template>
 <div class="wrap">
+    <ContentWide
+        :title="title02"
+        :widetxt01="txt05"
+        :widetxt02="txt06"
+        :widetxt04="txt07"
+        :images="images02"
+    />
     <ContentHigh
         :title="title"
         :hightxt01="txt01"
@@ -12,12 +19,32 @@
 
 <script setup>
 
+
 import work1 from '@/assets/images/project/wedding01.webp'
 import work2 from '@/assets/images/project/wedding02.webp'
 import work3 from '@/assets/images/project/wedding03.webp'
 import work4 from '@/assets/images/project/wedding04.webp'
 import work5 from '@/assets/images/project/wedding05.webp'
+import work6 from '@/assets/images/project/cardsection01.webp'
+import work7 from '@/assets/images/project/cardsection02.webp'
 
+
+
+const title02 = "CARD SECTION"
+const txt05 = "부트스트랩 습작 - 카드 섹션 인터랙션"
+const txt06 = "작업 툴 : (Bootstarp, Html, Js, Css)"
+const txt07 = "부트스트랩 Class 활용하여 기본 섹션 및 오브젝트 구성 후 js, css 활용하여 인터랙션 효과 제작"
+
+const images02 = [
+    {
+        src: work6,
+        link: 'http://crayoon000.dothome.co.kr'
+    },
+    {
+        src: work7,
+        link: ''
+    }
+]
 
 
 const title = "INVITATION"
