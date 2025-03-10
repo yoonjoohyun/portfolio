@@ -46,6 +46,7 @@
     height:140px;
     overflow:hidden;
     border-radius:15%;
+    filter:drop-shadow(1px 1px 3px #d1c6c6c4);
     @media(width < 820px){
         margin:0 auto;
     }
